@@ -34,7 +34,7 @@ Before starting your journey on BioVerse, it's recommended to read about some co
 
 ## Features
 
-### Fund Raising for Early-Stage Startups
+### Fund Raising for P2P
 One of the main attractions of BioVerse is its crowd-funding section dedicated to early-stage startups for taking a step towards conserving BioHeritage. Here, venture capitalists (VCs) and individuals alike can contribute to startup projects, helping them raise necessary funds for their growth and development.
 
 ### Polygon
