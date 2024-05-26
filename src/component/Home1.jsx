@@ -630,7 +630,7 @@ const Home1 = () => {
                   alt=""
                   src="https://i.imgur.com/oAUU8QU.png"
                 />
-                <div className="relative font-medium">AI-Gen</div>
+                <div className="relative font-medium">GenAI</div>
               </div>
 
              

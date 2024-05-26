@@ -16,7 +16,6 @@ import Notifications from "./component/Notifications";
 import Messages from "./component/Messages";
 import Sendmessages from "./component/Sendmessages";
 import Getstarted from "./component/Getstarted";
-import NSFW from "./component/NSFW";
 import Commingsoon from "./component/Commingsoon";
 import Buycoins from "./component/Buycoins";
 import Withdraw from "./component/Withdraw";
@@ -59,7 +58,6 @@ function App() {
               element={<PostComponent /*state = {state}*/ />}
             />
             <Route path="/send" element={<SendPost /*state = {state}*/ />} />
-            <Route path="/nsfw" element={<NSFW /*state = {state}*/ />} />
             <Route path="/withdraw" element={<Withdraw /*state = {state}*/ />} />
             <Route
               path="/communities"
