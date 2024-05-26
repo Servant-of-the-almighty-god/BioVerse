@@ -67,16 +67,16 @@ Your thoughts mean a lot to us! If you have any ideas, questions, or run into an
 
 Product Screen Shots ->
 
-![alt text](image-6.png)
+![alt text](imagea.png)
 
-![alt text](image-7.png)
+![alt text](imageb.png)
 
-![alt text](image-8.png)
+![alt text](imagec.png)
 
-![alt text](image-1.png)
+![alt text](imaged.png)
 
-![alt text](image-2.png)
+![alt text](imagee.png)
 
-![alt text](image-3.png)
+![alt text](imagef.png)
 
-![alt text](image-4.png)
+![alt text](imageg.png)
