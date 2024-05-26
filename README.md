@@ -38,26 +38,26 @@ Before starting your journey on BioVerse, it's recommended to read about some co
 One of the main attractions of BioVerse is its crowd-funding section dedicated to early-stage startups for taking a step towards conserving BioHeritage. Here, venture capitalists (VCs) and individuals alike can contribute to startup projects, helping them raise necessary funds for their growth and development.
 
 ### Polygon
-Ethereum's gas fees can be a barrier to entry for many users. BioVerse, by deploying on Polygon, can offer significantly lower transaction fees, making it more accessible to a wider audience. This aligns with Dconnect's goal of creating an inclusive and user-centric platform.
+Ethereum's gas fees can be a barrier to entry for many users. BioVerse, by deploying on Polygon, can offer significantly lower transaction fees, making it more accessible to a wider audience. This aligns with Bioverse's goal of creating an inclusive and user-centric platform.
 
 ### Ethereum
-Ethereum's robust security infrastructure provides a solid foundation for Dconnect. Users can be confident that their data and assets are protected by Ethereum's battle-tested security protocols.
+Ethereum's robust security infrastructure provides a solid foundation for BioVerse. Users can be confident that their data and assets are protected by Ethereum's battle-tested security protocols.
 
 
 
 ## Getting Started
-To begin your journey on Dconnect, follow these steps:
+To begin your journey on BioVerse, follow these steps:
 
-1. **Sign Up**: Provide a QR code corresponding to your Anon Aadhaar during signup for secure and anonymous authentication.
+1. **Sign Up**: Connect your wallet and get 50 tokens as a login bonus 
 
-2. **Explore Features**: Take some time to explore the various features offered by Dconnect, including AI-generated content and crowd-funding opportunities.
+2. **Explore Features**: Take some time to explore the various features offered by BioVerse, including AI-generated content and BioFunding to contribute for a good cause for a better future.
 
 3. **Engage with the Community**: Connect with other users, engage in discussions, share content, and participate in activities within the platform.
 
 4. **Earn Tokens**: By actively participating and contributing to the community, you can earn tokens.
 
 ## Security and Privacy
-At Dconnect, we prioritize the security and privacy of our users. We employ robust encryption methods and adhere to strict privacy standards to ensure that your data remains safe and secure.
+At BioVerse, we prioritize the security and privacy of our users. We employ robust encryption methods and adhere to strict privacy standards to ensure that your data remains safe and secure.
 
 ## Feedback and Support
-Your thoughts mean a lot to us! If you have any ideas, questions, or run into any problems using Dconnect, please don't hesitate to get in touch with our support team. Your feedback helps us make Dconnect better for everyone.
+Your thoughts mean a lot to us! If you have any ideas, questions, or run into any problems using BioVerse, please don't hesitate to get in touch with our support team. Your feedback helps us make BioVerse better for everyone.
