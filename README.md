@@ -10,8 +10,6 @@ Video Demo -> https://youtu.be/0l_iaUcyJv0
 ![alt text](image.png)
 
 
-
-
 Welcome to Bioverse, a decentralized platform where users can engage with each other, earn tokens, and participate in various activities. Before diving into the platform, it's essential to familiarize yourself with some core principles and features.
 
 ## Tech Stack
@@ -69,11 +67,11 @@ Your thoughts mean a lot to us! If you have any ideas, questions, or run into an
 
 Product Screen Shots ->
 
-![alt text](<Screenshot 2024-05-26 130400.png>)
+![alt text](image-6.png)
 
-![alt text](<Screenshot 2024-05-26 130414.png>)
+![alt text](image-7.png)
 
-![alt text](<Screenshot 2024-05-26 130428.png>)
+![alt text](image-8.png)
 
 ![alt text](image-1.png)
 
