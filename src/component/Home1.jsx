@@ -8,6 +8,8 @@ import PostComponent from "./PostComponent";
 import axios from "axios";
 import SendPost from "./SendPost";
 import Alert from "@mui/material/Alert";
+import Shepherd from "shepherd.js";
+import 'shepherd.js/dist/css/shepherd.css';
 
 const Home1 = () => {
   const navigate = useNavigate();
@@ -41,6 +43,225 @@ const Home1 = () => {
   const [isAlertSuccess, setIsAlertSuccess] = useState(false);
   const [successAlertContent, setSuccessAlertContent] = useState("");
   const [isAlertInfo, setIsAlertInfo] = useState(false);
+
+  useEffect(() => {
+    const tour = new Shepherd.Tour({
+      defaultStepOptions: {
+        cancelIcon: {
+          enabled: true,
+        },
+        classes: 'class-1 class-2',
+        scrollTo: { behavior: 'smooth', block: 'center' },
+      },
+    });
+
+    tour.addStep({
+      id: 'welcome',
+      text: 'Welcome to the home page! Shepherd.js will guide you through BioVerse',
+      buttons: [
+        {
+          text: 'Next',
+          action: tour.next
+        }
+      ]
+    });
+
+
+    tour.addStep({
+      id: 'walletbutton',
+      text: 'Connect to the metamask wallet first to explore the BioVerse',
+      attachTo: {
+        element: '#walletbutton',
+        on: 'top'
+      },
+      buttons: [
+        {
+          text: 'Back',
+          action: tour.back
+        },
+        {
+          text: 'Next',
+          action: tour.next
+        }
+      ]
+    });
+
+    tour.addStep({
+      id: 'bounty',
+      text: 'This is the bounty sections, 1 like and 10 comments to posts will give you 50 tokens ',
+      attachTo: {
+        element: '#bounty',
+        on: 'left'
+      },
+      buttons: [
+        {
+          text: 'Back',
+          action: tour.back
+        },
+        {
+          text: 'Next',
+          action: tour.next
+        }
+      ]
+    });
+
+    tour.addStep({
+      id: 'coinssection',
+      text: 'Here you can see your coins you have in your wallet',
+      attachTo: {
+        element: '#coinssection',
+        on: 'bottom'
+      },
+      buttons: [
+        {
+          text: 'Back',
+          action: tour.back
+        },
+        {
+          text: 'Next',
+          action: tour.next
+        }
+      ]
+    });
+
+    tour.addStep({
+      id: 'linkupwith',
+      text: 'Here you can follow people to contribute more towards goodness',
+      attachTo: {
+        element: '#linkupwith',
+        on: 'left'
+      },
+      buttons: [
+        {
+          text: 'Back',
+          action: tour.back
+        },
+        {
+          text: 'Next',
+          action: tour.next
+        }
+      ]
+    });
+
+    tour.addStep({
+      id: 'home',
+      text: 'This will take you to the home page',
+      attachTo: {
+        element: '#home',
+        on: 'right'
+      },
+      buttons: [
+        {
+          text: 'Back',
+          action: tour.back
+        },
+        {
+          text: 'Next',
+          action: tour.next
+        }
+      ]
+    });
+
+    tour.addStep({
+      id: 'notifications',
+      text: 'this is where you will see if anybody has liked your biofund post or any comments, etc',
+      attachTo: {
+        element: '#notifications',
+        on: 'right'
+      },
+      buttons: [
+        {
+          text: 'Back',
+          action: tour.back
+        },
+        {
+          text: 'Next',
+          action: tour.next
+        }
+      ]
+    });
+
+    tour.addStep({
+      id: 'messages',
+      text: 'This is where you can see your personal messages',
+      attachTo: {
+        element: '#messages',
+        on: 'left'
+      },
+      buttons: [
+        {
+          text: 'Back',
+          action: tour.back
+        },
+        {
+          text: 'Next',
+          action: tour.next
+        }
+      ]
+    });
+
+    tour.addStep({
+      id: 'communities',
+      text: 'This is where you can collaborate with various communities',
+      attachTo: {
+        element: '#communities',
+        on: 'right'
+      },
+      buttons: [
+        {
+          text: 'Back',
+          action: tour.back
+        },
+        {
+          text: 'Next',
+          action: tour.next
+        }
+      ]
+    });
+
+    tour.addStep({
+      id: 'biofunding',
+      text: 'This is where you can see all the fundings and can contribute ',
+      attachTo: {
+        element: '#biofunding',
+        on: 'right'
+      },
+      buttons: [
+        {
+          text: 'Back',
+          action: tour.back
+        },
+        {
+          text: 'Next',
+          action: tour.next
+        }
+      ]
+    });
+
+    tour.addStep({
+      id: 'genai',
+      text: 'This is where you can see all the fundings and can contribute ',
+      attachTo: {
+        element: '#genai',
+        on: 'right'
+      },
+      buttons: [
+        {
+          text: 'Back',
+          action: tour.back
+        },
+        {
+          text: 'Next',
+          action: tour.next
+        }
+      ]
+    });
+
+
+    // Optional: Start tour automatically
+    tour.start();
+  }, []);
+
 
   const handleIncrement = () => {
     setCountBuyCoin((prevCount) => prevCount + 1);
@@ -544,7 +765,7 @@ const Home1 = () => {
 
           <div className="relative bottom-[5rem] w-full flex  items-start justify-center  ">
             <div className="flex flex-col gap-[2.25rem] text-left text-[1.25rem] text-white font-inter">
-              <div
+              <div id="home"
                 onClick={() => {
                   navigate("/home1");
                 }}
@@ -557,7 +778,7 @@ const Home1 = () => {
                 />
                 <div className="relative font-medium ">Home</div>
               </div>
-              <div
+              <div id="notifications"
                 onClick={() => {
                   navigate("/notifications");
                 }}
@@ -568,7 +789,7 @@ const Home1 = () => {
                   alt=""
                   src="https://i.imgur.com/5brDfrE.jpeg"
                 />
-                <div
+                <div 
                   onClick={() => {
                     navigate("/notifications");
                   }}
@@ -577,7 +798,7 @@ const Home1 = () => {
                   Notifications
                 </div>
               </div>
-              <div
+              <div id='messages'
                 onClick={() => {
                   navigate("/messages");
                 }}
@@ -590,7 +811,7 @@ const Home1 = () => {
                 />
                 <div className="relative font-medium">Messages</div>
               </div>
-              <div
+              <div id="communities"
                 onClick={() => {
                   if (num === 1) {
                     navigate("/communities");
@@ -606,7 +827,7 @@ const Home1 = () => {
                 <div className="relative  font-medium">Communities</div>
               </div>
 
-              <div
+              <div id="biofunding"
                 onClick={() => {
                   navigate("/crowdfunding");
                 }}
@@ -619,7 +840,7 @@ const Home1 = () => {
                 />
                 <div className="relative font-medium">BioFunding</div>
               </div>
-              <div
+              <div id='genai'
                 onClick={() => {
                   navigate("/AiPlat");
                 }}
@@ -634,10 +855,7 @@ const Home1 = () => {
               </div>
 
              
-              {/* <div className="flex flex-row items-start justify-start gap-[0.63rem]">
-<img className="relative w-[1.25rem] h-[1.25rem]" alt="" src="https://cdn.discordapp.com/attachments/1177493315898314792/1184069996142415983/image.png?ex=658aa21e&is=65782d1e&hm=0ce679d0e2e97dd09997ae88aa90f3cd824d6d5ab5263d9948b64fa0db0bd636&" />
-<div className="relative font-medium">Profile</div>
-</div> */}
+      
             </div>
 
             <div></div>
@@ -789,7 +1007,7 @@ const Home1 = () => {
               }}
               className="relative cursor-pointer rounded-md [background:linear-gradient(106.75deg,_#fdd835,_#fff_49.15%,_#ffd000)] box-border  h-[2.563rem] w-[8.438rem] overflow-hidden text-left text-[0.88rem] text-black font-inter border-t-[1px] border-solid border-cornsilk border-r-[1px] border-l-[1px]"
             >
-              <div
+              <div id="coinssection"
                 title="Buy Coins"
                 className="absolute top-[0.75rem] left-[1.38rem] font-medium"
               >
@@ -803,7 +1021,7 @@ const Home1 = () => {
             </div>
 
             {num === 0 ? (
-              <div
+              <div id="walletbutton"
                 onClick={handleConnectWallet}
                 className="relative rounded-lg hover:bg-violet-400 transition-transform transform hover:scale-75 bg-blueviolet box-border w-[9.875rem] h-[2.56rem] overflow-hidden text-left text-[1rem] text-white font-inter border-t-[1px] border-solid border-mediumslateblue border-r-[1px] border-l-[1px]"
               >
@@ -826,7 +1044,7 @@ const Home1 = () => {
             )}
           </div>
 
-          <div className="flex justify-start ml-10 mt-4">
+          <div id="linkupwith" className="flex justify-start ml-10 mt-4">
             <div className="relative rounded-2xl [background:linear-gradient(180.13deg,_#202020,_#181818)] box-border w-[16.938rem] h-[23.69rem] overflow-hidden text-left text-[0.88rem] text-white font-inter border-t-[2px] border-solid border-grayz border-r-[1px] border-l-[1px]">
               <b className="absolute top-[1.13rem] left-[1.06rem] text-[1.13rem]">
                 linkup with
@@ -901,7 +1119,7 @@ const Home1 = () => {
             </div>
           </div>
 
-          <div className="relative rounded-2xl [background:linear-gradient(180.13deg,_#202020,_#181818)] ml-10 mt-4 box-border w-[16.938rem] h-[11.13rem] overflow-hidden text-left text-[1rem] text-gray-50 font-inter ">
+          <div id = "bounty" className="relative rounded-2xl [background:linear-gradient(180.13deg,_#202020,_#181818)] ml-10 mt-4 box-border w-[16.938rem] h-[11.13rem] overflow-hidden text-left text-[1rem] text-gray-50 font-inter ">
             <b className="absolute top-[0.94rem] left-[1.31rem] text-[1.13rem] text-white">
               {" "}
               Bounty
