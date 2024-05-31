@@ -10,7 +10,7 @@ import SendPost from "./SendPost";
 import Alert from "@mui/material/Alert";
 import Shepherd from "shepherd.js";
 import 'shepherd.js/dist/css/shepherd.css';
-
+import './custom-shepherd.css'; 
 const Home1 = () => {
   const navigate = useNavigate();
   const [commentOpen, setCommentOpen] = useState(false);
@@ -50,26 +50,39 @@ const Home1 = () => {
         cancelIcon: {
           enabled: true,
         },
-        classes: 'class-1 class-2',
+        classes: 'shepherd-theme-custom', // Apply custom theme
         scrollTo: { behavior: 'smooth', block: 'center' },
       },
     });
-
+  
     tour.addStep({
-      id: 'welcome',
-      text: 'Welcome to the home page! Shepherd.js will guide you through BioVerse',
+      id: "welcome",
+      text: `
+        <div class="tour-step-content">
+          <div class="tour-step-header"> 
+            <img src="./shepherd.ico" alt="Welcome Image" class="tour-shepherd-icon"/>
+          </div>
+          <br><p>Welcome to the home page! Shepherd.js will guide you through BioVerse</p>
+        </div>
+      `,
       buttons: [
         {
-          text: 'Next',
-          action: tour.next
-        }
-      ]
+          text: "Next",
+          action: tour.next,
+        },
+      ],
     });
-
-
+  
     tour.addStep({
       id: 'walletbutton',
-      text: 'Connect to the metamask wallet first to explore the BioVerse',
+      text: `
+        <div class="tour-step-content">
+          <div class="tour-step-header"> 
+            <img src="./shepherd.ico" alt="Wallet Button Image" class="tour-shepherd-icon"/>
+          </div>
+          <br><p>Connect to the metamask wallet first to explore the BioVerse</p>
+        </div>
+      `,
       attachTo: {
         element: '#walletbutton',
         on: 'top'
@@ -85,10 +98,17 @@ const Home1 = () => {
         }
       ]
     });
-
+  
     tour.addStep({
       id: 'bounty',
-      text: 'This is the bounty sections, 1 like and 10 comments to posts will give you 50 tokens ',
+      text: `
+        <div class="tour-step-content">
+          <div class="tour-step-header"> 
+            <img src="./shepherd.ico" alt="Bounty Image" class="tour-shepherd-icon"/>
+          </div>
+          <br><p>This is the bounty sections, 1 like and 10 comments to posts will give you 50 tokens</p>
+        </div>
+      `,
       attachTo: {
         element: '#bounty',
         on: 'left'
@@ -104,10 +124,17 @@ const Home1 = () => {
         }
       ]
     });
-
+  
     tour.addStep({
       id: 'coinssection',
-      text: 'Here you can see your coins you have in your wallet',
+      text: `
+        <div class="tour-step-content">
+          <div class="tour-step-header"> 
+            <img src="./shepherd.ico" alt="Coins Section Image" class="tour-shepherd-icon"/>
+          </div>
+          <br><p>Here you can see your coins you have in your wallet</p>
+        </div>
+      `,
       attachTo: {
         element: '#coinssection',
         on: 'bottom'
@@ -123,10 +150,17 @@ const Home1 = () => {
         }
       ]
     });
-
+  
     tour.addStep({
       id: 'linkupwith',
-      text: 'Here you can follow people to contribute more towards goodness',
+      text: `
+        <div class="tour-step-content">
+          <div class="tour-step-header"> 
+            <img src="./shepherd.ico" alt="Link Up With Image" class="tour-shepherd-icon"/>
+          </div>
+          <br><p>Here you can follow people to contribute more towards goodness</p>
+        </div>
+      `,
       attachTo: {
         element: '#linkupwith',
         on: 'left'
@@ -142,10 +176,17 @@ const Home1 = () => {
         }
       ]
     });
-
+  
     tour.addStep({
       id: 'home',
-      text: 'This will take you to the home page',
+      text: `
+        <div class="tour-step-content">
+          <div class="tour-step-header"> 
+            <img src="./shepherd.ico" alt="Home Image" class="tour-shepherd-icon"/>
+          </div>
+          <br><p>This will take you to the home page</p>
+        </div>
+      `,
       attachTo: {
         element: '#home',
         on: 'right'
@@ -161,10 +202,17 @@ const Home1 = () => {
         }
       ]
     });
-
+  
     tour.addStep({
       id: 'notifications',
-      text: 'this is where you will see if anybody has liked your biofund post or any comments, etc',
+      text: `
+        <div class="tour-step-content">
+          <div class="tour-step-header"> 
+            <img src="./shepherd.ico" alt="Notifications Image" class="tour-shepherd-icon"/>
+          </div>
+          <br><p>This is where you will see if anybody has liked your biofund post or any comments, etc</p>
+        </div>
+      `,
       attachTo: {
         element: '#notifications',
         on: 'right'
@@ -180,10 +228,17 @@ const Home1 = () => {
         }
       ]
     });
-
+  
     tour.addStep({
       id: 'messages',
-      text: 'This is where you can see your personal messages',
+      text: `
+        <div class="tour-step-content">
+          <div class="tour-step-header"> 
+            <img src="./shepherd.ico" alt="Messages Image" class="tour-shepherd-icon"/>
+          </div>
+          <br><p>This is where you can see your personal messages</p>
+        </div>
+      `,
       attachTo: {
         element: '#messages',
         on: 'left'
@@ -199,10 +254,17 @@ const Home1 = () => {
         }
       ]
     });
-
+  
     tour.addStep({
       id: 'communities',
-      text: 'This is where you can collaborate with various communities',
+      text: `
+        <div class="tour-step-content">
+          <div class="tour-step-header"> 
+            <img src="./shepherd.ico" alt="Communities Image" class="tour-shepherd-icon"/>
+          </div>
+          <br><p>This is where you can collaborate with various communities</p>
+        </div>
+      `,
       attachTo: {
         element: '#communities',
         on: 'right'
@@ -218,10 +280,17 @@ const Home1 = () => {
         }
       ]
     });
-
+  
     tour.addStep({
       id: 'biofunding',
-      text: 'This is where you can see all the fundings and can contribute ',
+      text: `
+        <div class="tour-step-content">
+          <div class="tour-step-header"> 
+            <img src="./shepherd.ico" alt="Biofunding Image" class="tour-shepherd-icon"/>
+          </div>
+          <br><p>This is where you can see all the fundings and can contribute</p>
+        </div>
+      `,
       attachTo: {
         element: '#biofunding',
         on: 'right'
@@ -237,10 +306,17 @@ const Home1 = () => {
         }
       ]
     });
-
+  
     tour.addStep({
       id: 'genai',
-      text: 'This is where you can see all the fundings and can contribute ',
+      text: `
+        <div class="tour-step-content">
+          <div class="tour-step-header"> 
+            <img src="./shepherd.ico" alt="GenAI Image" class="tour-shepherd-icon"/>
+          </div>
+          <br><p>This is the genai feature, create AI driven images and convert to NFT</p>
+        </div>
+      `,
       attachTo: {
         element: '#genai',
         on: 'right'
@@ -256,12 +332,28 @@ const Home1 = () => {
         }
       ]
     });
-
-
+  
+    tour.addStep({
+      id: "welcome",
+      text: `
+        <div class="tour-step-content">
+          <div class="tour-step-header"> 
+            <img src="./shepherd.ico" alt="Welcome Image" class="tour-shepherd-icon"/>
+          </div>
+          <br><p> Get Immersed in BioVerse, A step towards Goodness</p>
+        </div>
+      `,
+      buttons: [
+        {
+          text: "Finish",
+          action: tour.next,
+        },
+      ],
+    });
     // Optional: Start tour automatically
     tour.start();
   }, []);
-
+  
 
   const handleIncrement = () => {
     setCountBuyCoin((prevCount) => prevCount + 1);
