@@ -240,7 +240,7 @@ const AiPlatform = () => {
             href="https://scan.test.btcs.network/faucet"
             className="[text-decoration:underline]"
           >
-            here
+            
           </a>
           {` `}
           <img
