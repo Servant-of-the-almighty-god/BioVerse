@@ -8,8 +8,6 @@ Video Demo -> https://youtu.be/0l_iaUcyJv0
 ## This is the Tokenomics for doing so -> 
 
 Deployed smartcontract address/id on stellar testnet-> CB4H75Q634VCPFL7VSP57FANUOWF6R2GJ5B6UZVPP62CUDNAE25FUNTC
-![alt text](image.png)
-
 
 Welcome to Bioverse, a decentralized platform where users can engage with each other, earn tokens, and participate in various activities. Before diving into the platform, it's essential to familiarize yourself with some core principles and features.
 
@@ -64,6 +62,13 @@ At BioVerse, we prioritize the security and privacy of our users. We employ robu
 
 ## Feedback and Support
 Your thoughts mean a lot to us! If you have any ideas, questions, or run into any problems using BioVerse, please don't hesitate to get in touch with our support team. Your feedback helps us make BioVerse better for everyone.
+
+
+![image](https://github.com/Servant-of-the-almighty-god/BioVerse/assets/166640511/e0abea18-8f04-4292-847a-4b06a702aad8)
+
+Soroban SDK and stellar(Freighter) wallet integration : walletconnector.jsx & sendpost.jsx contains wallet connection code where we have used stellar for post functionality.
+
+
 
 
 Product Screen Shots ->
