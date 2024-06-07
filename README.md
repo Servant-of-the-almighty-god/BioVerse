@@ -30,6 +30,13 @@ We utilized the Soroban SDK to develop the PolyFund smart contract for BioVerse,
 - Voting and Requests: Allowing contributors to vote on fund requests and ensuring majority support for payments.
 - Refunds: Providing refunds if the funding target is not met by the deadline.
 
+  
+![image](https://github.com/Servant-of-the-almighty-god/BioVerse/assets/166640511/e0abea18-8f04-4292-847a-4b06a702aad8)
+
+Soroban SDK and stellar(Freighter) wallet integration : walletconnector.jsx & sendpost.jsx contains wallet connection code where we have used stellar for post functionality.
+
+
+
 ## Core DAO Testnet Faucets
 Before starting your journey on BioVerse, it's recommended to read about some core DAO (Decentralized Autonomous Organization) faucets. These are essential components of our platform, ensuring transparency, fairness, and community governance. You can find more information about these faucets [here](https://scan.test.btcs.network/faucet).
 
@@ -62,11 +69,6 @@ At BioVerse, we prioritize the security and privacy of our users. We employ robu
 
 ## Feedback and Support
 Your thoughts mean a lot to us! If you have any ideas, questions, or run into any problems using BioVerse, please don't hesitate to get in touch with our support team. Your feedback helps us make BioVerse better for everyone.
-
-
-![image](https://github.com/Servant-of-the-almighty-god/BioVerse/assets/166640511/e0abea18-8f04-4292-847a-4b06a702aad8)
-
-Soroban SDK and stellar(Freighter) wallet integration : walletconnector.jsx & sendpost.jsx contains wallet connection code where we have used stellar for post functionality.
 
 
 
